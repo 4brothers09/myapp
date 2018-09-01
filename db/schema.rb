@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_31_082711) do
+ActiveRecord::Schema.define(version: 2018_09_01_030209) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2018_08_31_082711) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
   end
 
 end
